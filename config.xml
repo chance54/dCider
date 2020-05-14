@@ -1,0 +1,10 @@
+<widget id="com.chancehoard.dCider" version="1.5.8">
+  <name>dCider</name>
+  <author>Chance Hoard</author>
+  <platform name="android">
+    <icon src="icon.png"/>
+  </platform>
+  <platform name="ios">
+    <icon src="icon.png"/>
+  </platform>
+</widget>
