@@ -7,5 +7,5 @@
   <platform name="ios">
     <icon src="icon.png"/>
   </platform>
-  <preference name="orientation" value="landscape" />
+  <preference name="orientation" value="portrait" />
 </widget>
