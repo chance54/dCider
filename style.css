@@ -1,0 +1,96 @@
+html,body{ margin:0; padding:0; height:100%; width:100%; }
+
+#background {
+    background-color: darkorange;
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+#choice1 {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 110px;
+}
+#add {
+    position: absolute;
+    background-color: darkorange;
+    top: 80%;
+    left: 5%;
+    width: 7%;
+    height: 10%;
+    font-size: fill;
+    text-align: center;
+    color: white;
+	cursor: pointer;
+}
+#go {
+    position: absolute;
+    background-color: darkorange;
+    top: 80%;
+    left: 85%;
+    font-size: 200%;
+    text-align: center;
+    color: white;
+    width: 7%;
+    height: 10%;
+    font-family: sans-serif;
+	cursor: pointer;
+}
+#buttonstext1 {
+	font-size: 300%;
+	width: 100%;
+	height: 100%;
+}
+#buttonstext2 {
+	font-size: 200%;
+	width: 100%;
+	height: 100%;
+}
+#cont {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: darkorange;
+}
+#showey_a {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 1%;
+    background-color: #00e5ff;
+    text-align: center;
+}
+
+#ans {
+	position: absolute;
+	color: white;
+	font-family: sans-serif;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 250%;
+}
+
+#again {
+	position: absolute;
+	text-align: center;
+	background-color: blue;
+	width: 100%;
+	height: 8%;
+	top: 70%;
+	left: 0%;
+	color: white;
+	cursor: pointer;
+}
+#same {
+	position: absolute;
+	text-align: center;
+	background-color: darkorange;
+	width: 100%;
+	height: 9%;
+	top: 80%;
+	left: 0%;
+	color: white;
+	cursor: pointer;
+}
