@@ -7,6 +7,6 @@
   <platform name="ios">
     <icon src="icon.png"/>
   </platform>
-  <preference name="orientation" value="portrait" />
   <gap:plugin name="phonegap-admob" source="npm"/>
+  <preference name="orientation" value="portrait" />
 </widget>
