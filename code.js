@@ -6,8 +6,7 @@ function onDeviceReady() {
       // Set AdMobAds options:
       admob.setOptions({
         publisherId:          "ca-app-pub-2368364509282508~7661702402",  // Required
-		bannerAdId:           "ca-app-pub-3940256099942544/6300978111",  // Optional
-		interstitialAdId:     "ca-app-pub-2368364509282508/4097861914",  // Optional
+		interstitialAdId:     "ca-app-pub-3940256099942544/6300978111",  // Optional
       });
       
       // Start showing banners (atomatic when autoShowBanner is set to true)
