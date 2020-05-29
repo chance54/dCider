@@ -1,4 +1,4 @@
-<widget id="com.chancehoard.dCider" version="1.6.3">
+<widget id="com.chancehoard.dCider" version="1.6.5">
   <name>dCider</name>
   <author>Chance Hoard</author>
   <platform name="android">
@@ -7,4 +7,5 @@
   <platform name="ios">
     <icon src="icon.png"/>
   </platform>
+  <prefrence name="orientation" value="portrait"/>
 </widget>
