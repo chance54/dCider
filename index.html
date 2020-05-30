@@ -19,10 +19,10 @@
 			
         </div>
 	</head>
-	<body>
+	<body onload="myFunction()">
 		<script src="code.js"></script>
 		<script type="text/javascript">
-			function onDeviceReady() {
+			function myFunction() {
 				alert("device ready");
       document.removeEventListener('deviceready', onDeviceReady, false);
       
