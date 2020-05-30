@@ -5,6 +5,7 @@
 	<meta name="viewport" context="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
 	    <div id="background">
+		    <button onclick="showad()">Show Ad</button>
 			<div id="add" onclick="more()"><p id="buttonstext1">+</p></div>
 			<div id="go" onclick="decide()"><p id="buttonstext2">GO</p></div>
         </div>
@@ -19,6 +20,28 @@
         </div>
 	</head>
 	<body>
-		<script src="code.js"></script>
+		<script src="code.js">
+			function onDeviceReady() {
+      document.removeEventListener('deviceready', onDeviceReady, false);
+      
+      // Set AdMobAds options:
+      admob.setOptions({
+        publisherId:           "ca-app-pub-3940256099942544/6300978111",  // Required
+        interstitialAdId:      "ca-app-pub-3940256099942544/1033173712",  // Optional
+        autoShowBanner:        true,                                      // Optional
+        autoShowRInterstitial: false,                                     // Optional
+      });
+      
+      // Start showing banners (atomatic when autoShowBanner is set to true)
+      admob.createBannerView();
+      
+      // Request interstitial ad (will present automatically when autoShowInterstitial is set to true)
+	function showad(){
+		 admob.requestInterstitialAd();
+	}
+ 
+    }
+	document.addEventListener("deviceready", onDeviceReady, false);
+		</script>
 	</body>
 </html>
