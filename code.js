@@ -1,20 +1,6 @@
 // V 1.6.6
 
-function onDeviceReady() {
-    document.removeEventListener('deviceready', onDeviceReady, false);
 
-    // Set AdMobAds options:
-    admob.setOptions({
-        publisherId:          "ca-app-pub-2368364509282508~7661702402",  // Required
-        interstitialAdId:     "ca-app-pub-3940256099942544/1033173712",  // Optional
-    });
-}
-
-admob.requestInterstitialAd({
-    autoShowInterstitial: true
-});
-
-document.addEventListener("deviceready", onDeviceReady, false);
 
 var toomuch = 0;
 var place = 0;
