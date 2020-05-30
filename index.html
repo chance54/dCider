@@ -23,7 +23,6 @@
 		<script src="code.js"></script>
 		<script type="text/javascript">
 			function myFunction() {
-				alert("device ready");
       document.removeEventListener('deviceready', onDeviceReady, false);
       
       // Set AdMobAds options:
@@ -41,6 +40,7 @@
       // Request interstitial ad (will present automatically when autoShowInterstitial is set to true)
 	function showad(){
 		 admob.requestInterstitialAd();
+		alert("ad should be shown");
 	}
  
     }
