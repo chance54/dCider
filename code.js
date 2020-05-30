@@ -1,16 +1,61 @@
 // V 1.6.6
 
-document.addEventListener('deviceready', this.onDeviceReady, false);
+function initAds() {
+    if (admob) {
+    var adPublisherIds = {
+        ios : {
+        banner : "ca-app-pub-3940256099942544/6300978111",
+        interstitial : "ca-app-pub-3940256099942544/1033173712"
+        },
+        android : {
+        banner : "ca-app-pub-3940256099942544/6300978111",
+        interstitial : "ca-app-pub-3940256099942544/1033173712
+        }
+    };
 
-async function onDeviceReady() {
-    await admob.createBannerView({ publisherId: 'ca-app-pub-2368364509282508~7661702402' });
+    var admobid = (/(android)/i.test(navigator.userAgent)) ? adPublisherIds.android : adPublisherIds.ios;
+        
+    admob.setOptions({
+        publisherId:      admobid.banner,
+        interstitialAdId: admobid.interstitial,
+    });
+
+    registerAdEvents();
+
+    } else {
+    alert('AdMobAds plugin not ready');
+    }
 }
 
-const bannerOptions = {
-	publisherId:          "ca-app-pub-3940256099942544/6300978111"
-};
+function onAdLoaded(e) {
+    if (e.adType === admob.AD_TYPE.INTERSTITIAL) {
+    admob.showInterstitialAd();
+    showNextInterstitial = setTimeout(function() {
+        admob.requestInterstitialAd();
+    }, 2 * 60 * 1000); // 2 minutes
+    }
+}
 
-admob.createBannerView();
+// optional, in case respond to events
+function registerAdEvents() {
+    document.addEventListener(admob.events.onAdLoaded, onAdLoaded);
+    document.addEventListener(admob.events.onAdFailedToLoad, function (event) {});
+    document.addEventListener(admob.events.onAdOpened, function (event) {});
+    document.addEventListener(admob.events.onAdClosed, function (event) {});
+}
+    
+function onDeviceReady() {
+    document.removeEventListener('deviceready', onDeviceReady, false);
+    initAds();
+
+    // display a banner at startup
+    admob.createBannerView();
+
+    // request an interstitial
+    admob.requestInterstitialAd();
+}
+
+document.addEventListener("deviceready", onDeviceReady, false);
 
 var toomuch = 0;
 var place = 0;
