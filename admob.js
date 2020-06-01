@@ -1,8 +1,5 @@
-alert("admob");
-
-function onDeviceReady() {
-    document.removeEventListener('deviceready', onDeviceReady, false);
-
+function onLoad() {
+    alert("loaded");
     // Set AdMobAds options:
     admob.setOptions({
         publisherId:          "ca-app-pub-3940256099942544/6300978111",  // Required
@@ -10,7 +7,6 @@ function onDeviceReady() {
     });
 }
 
-document.addEventListener("deviceready", onDeviceReady, false);
 
 admob.createBannerView({
     autoShowBanner: true
