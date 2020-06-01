@@ -4,15 +4,6 @@ admob.initAdmob("ca-app-pub-3940256099942544/6300978111", "ca-app-pub-3940256099
 
 admob.showBanner(admob.BannerSize.BANNER, admob.Position.TOP_APP);
 
-document.addEventListener(admob.Event.onInterstitialRecieve, this.onInterstitialRecieve, false);
-admob.cacheInterstitial();
-
-admob.isInterstitialReady(function(isReady){
-	if(isReady){
-		admob.showInterstitial();
-	}
-});
-
 var toomuch = 0;
 var place = 0;
 var how = 0;
