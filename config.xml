@@ -1,4 +1,4 @@
-<widget 
+<widget xmlns:gap="http://phonegap.com/ns/1.0"
         id="com.chancehoard.dCider" version="1.6.6">
   <name>dCider</name>
   <author>Chance Hoard</author>
@@ -8,6 +8,6 @@
   <platform name="ios">
     <icon src="icon.png"/>
   </platform>
-  <gap:plugin name="com.admob.plugin" version"3.0.0" source="plugins.cordova.io" />
+  
   <preference name="orientation" value="portrait" />
 </widget>
