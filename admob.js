@@ -1,3 +1,5 @@
+alert("admob");
+
 function onDeviceReady() {
     document.removeEventListener('deviceready', onDeviceReady, false);
 
