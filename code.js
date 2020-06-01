@@ -1,9 +1,5 @@
 // V 1.6.6
 
-admob.initAdmob("ca-app-pub-3940256099942544/6300978111", "ca-app-pub-3940256099942544/1033173712");
-
-admob.showBanner(admob.BannerSize.BANNER, admob.Position.TOP_APP);
-
 var toomuch = 0;
 var place = 0;
 var how = 0;
