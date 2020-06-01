@@ -8,6 +8,6 @@
   <platform name="ios">
     <icon src="icon.png"/>
   </platform>
-  <gap:plugin name="phonegap-admob" source="npm"/>
+  <gap:plugin name="com.admob.plugin" version"3.0.0" source="plugins.cordova.io" />
   <preference name="orientation" value="portrait" />
 </widget>
