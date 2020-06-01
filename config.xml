@@ -9,5 +9,5 @@
     <icon src="icon.png"/>
   </platform>
   <preference name="orientation" value="portrait" />
-  <gap:plugin name="phonegap-admob" source="npm" />
+  <gap:plugin name="cordova-plugin-admobpro" source="npm" />
 </widget>
