@@ -1,4 +1,4 @@
 # dCider
-A nice little tool to decide a tough decision for you at random, and with a max of 20 options, it's pretty nifty!
+A nice little tool to decide a tough decision for you at random.
 
-V 1.6.5
+V 0.5.0
