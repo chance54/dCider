@@ -1,4 +1,4 @@
-		// V 1.6.6
+		// V 0.5.0
 
 		document.getElementById("add").addEventListener("click", more);
 		document.getElementById("go").addEventListener("click", decide);
