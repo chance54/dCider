@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>dCider</title>
-	<meta name="viewport" context="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" href="style.css">
-	    <div id="background">
+    <head>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *; img-src 'self' data: content:;">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="initial-scale=1, width=device-width, viewport-fit=cover">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+              <div id="background">
 			<div id="add" onclick="more()"><p id="buttonstext1">+</p></div>
 			<div id="go" onclick="decide()"><p id="buttonstext2">GO</p></div>
-        </div>
-        <div id="cont" hidden>
+              </div>
+              <div id="cont" hidden>
 			
 			<div id="showey_a">
 				<p id="ans"></p>
@@ -16,10 +20,9 @@
 				<div id ="same" onclick="redo()" hidden>Try again with same options?</div>
 			</div>
 			
-        </div>
-	</head>
-	<body>
-		<script src="code.js"></script>
-		<script src="admob.js"></script>
-	</body>
+              </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+    </body>
 </html>
